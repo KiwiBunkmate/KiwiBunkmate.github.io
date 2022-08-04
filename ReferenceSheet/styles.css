@@ -41,7 +41,7 @@ nav a:active {
     color: red;
 }
 nav ol ol {
-    margin-left: 0.1em;
+    margin-left: -0.1em;
     padding-left: 0.1em;
 }
 ol,
