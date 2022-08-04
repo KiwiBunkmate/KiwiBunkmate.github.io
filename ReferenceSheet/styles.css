@@ -1,5 +1,5 @@
 body {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 20px);
     margin: 0;
     display: flex;
     font-family: sans-serif;
@@ -40,7 +40,7 @@ nav a:hover {
 nav a:active {
     color: red;
 }
-nav ol {
+nav ol ol {
     margin-left: 0.1em;
     padding-left: 0.1em;
 }
