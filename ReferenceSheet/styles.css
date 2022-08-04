@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: calc(100vh - 100px);
     margin: 0;
     display: flex;
     font-family: sans-serif;
@@ -17,7 +17,8 @@ nav {
     height: 100%;
     width: 70px;
     transition: width 0.4s;
-    border: 10px solid aliceblue;
+    border: 8px solid aliceblue;
+    padding: 2px;
     overflow-x: hidden;
     overflow-y: auto;
     background-color: aliceblue;
@@ -39,10 +40,14 @@ nav a:hover {
 nav a:active {
     color: red;
 }
-ol,
-ul {
+nav ol {
     margin-left: 0.1em;
     padding-left: 0.1em;
+}
+ol,
+ul {
+    margin-left: 1em;
+    padding-left: 1em;
 }
 ol ol li::marker {
     content: counters(list-item, ".") " ";
