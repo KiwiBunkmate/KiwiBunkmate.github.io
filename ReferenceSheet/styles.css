@@ -1,12 +1,13 @@
 body {
+    height: 100%;
     margin: 0;
     display: flex;
     font-family: sans-serif;
 }
 /* nav */
 header {
-    min-width: 290px;
-    max-width: 290px;
+    min-width: 90px;
+    max-width: 90px;
     overflow: hidden;
 }
 nav {
@@ -14,10 +15,16 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 270px;
+    width: 70px;
     padding: 10px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: aliceblue;
+    transition: width 0.5s;
+}
+nav:hover {
+    width: 270px;
+    transition: width 0.3s;
 }
 nav a {
     color: midnightblue;
@@ -39,8 +46,10 @@ ol ol li::marker {
 }
 /* main */
 main {
+    height: 100%;
     padding: 10px;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: scroll;
 }
 h4 {
     margin: 0;
