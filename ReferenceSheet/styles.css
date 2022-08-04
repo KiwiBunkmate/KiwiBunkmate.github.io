@@ -41,8 +41,8 @@ nav a:active {
 }
 ol,
 ul {
-    margin-left: 1em;
-    padding-left: 1em;
+    margin-left: 0.1em;
+    padding-left: 0.1em;
 }
 ol ol li::marker {
     content: counters(list-item, ".") " ";
