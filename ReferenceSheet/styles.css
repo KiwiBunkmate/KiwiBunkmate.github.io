@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+}
+/* nav */
+header {
+    min-width: 290px;
+    max-width: 290px;
+    overflow: hidden;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 270px;
+    padding: 10px;
+    overflow: auto;
+    background-color: aliceblue;
+}
+nav a {
+    color: midnightblue;
+    text-decoration-line: none;
+}
+nav a:hover {
+    text-decoration-line: underline;
+}
+nav a:active {
+    color: red;
+}
+ol,
+ul {
+    margin-left: 1em;
+    padding-left: 1em;
+}
+ol ol li::marker {
+    content: counters(list-item, ".") " ";
+}
+/* main */
+main {
+    padding: 10px;
+    overflow: auto;
+}
+h4 {
+    margin: 0;
+}
+section {
+    display: flex;
+    column-gap: 1em;
+}
+/* HTML */
+#Semantic + section {
+    column-gap: 0;
+}
+section > ul {
+    margin: 0 1em;
+}
+a:hover {
+    text-decoration-line: none;
+}
+figure {
+    margin: 0;
+}
+pre {
+    margin: 0;
+    padding: 10px;
+    background-color: midnightblue;
+}
+code {
+    background-color: midnightblue;
+    color: lightblue;
+    font-family: monospace;
+}
+code em {
+    background-color: lightblue;
+    color: midnightblue;
+    font-style: normal;
+}
+kbd {
+    padding: 0 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    font-family: monospace;
+}
+table,
+td {
+    border: 1px solid midnightblue;
+    border-spacing: 1px;
+}
+th {
+    background-color: lightsteelblue;
+}
+tfoot td {
+    background-color: aliceblue;
+}
+#table-example {
+    display: flex;
+}
+#table-example pre {
+    float: left;
+}
+#table-example table {
+    float: right;
+    height: 99px;
+}
+/* CSS */
+#selectors td {
+    width: 12.5%;
+    vertical-align: top;
+}
+#Transition {
+    color: white;
+    background-color: darkmagenta;
+    transition: transform 2s linear;
+}
+#Transition:hover {
+    cursor: grab;
+    transform: rotateX(180deg);
+    transition: transform 2s ease-in-out;
+}
+#content-box-example,
+#border-box-example {
+    border: 1px dotted black;
+    color: white;
+    font-size: 0.5em;
+}
+#content-box-example div {
+    box-sizing: content-box;
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+    height: 50px;
+    width: 60px;
+    background-color: darkmagenta;
+}
+#border-box-example div {
+    box-sizing: border-box;
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+    height: 50px;
+    width: 60px;
+    background-color: darkmagenta;
+}
+.inline-block {
+    display: inline-block;
+}
+#triangle-example {
+    max-width: 400px;
+}
+#triangle-example div{
+    display: inline-block;
+    border-style: solid;
+}
+#left {
+    width: 8em;
+    border-width: 1.5em;
+    border-color: lightsteelblue darkmagenta aliceblue transparent;
+}
+#right {
+    border-width: 1.5em 0.6em;
+    border-color: transparent;
+    border-left-color: midnightblue;
+}
+#Colors + table td {
+    max-width: 370px;
+}
